@@ -10,31 +10,48 @@
 <body>
     <section class="hero">
       <nav>
-            <img src="bar.svg" alt="" class="bar-img">
+            <img src="bar.svg" alt="" onclick="menuMostrar()" class="bar-img">
             <img src="logo.svg" alt="" class="logo">
             <h2>Conoce a Arnold</h2>
             <ul>
                 <li><a href="#">Casa</a></li>
                 <li><a href="">Videos</a></li>
                 <li><a href="">Contactos</a></li>
-                <li><a href="">Salir</a></li>
+                <li><a href="login.html">Salir</a></li>
             </ul>
-            <button type="button"><span></span></button>
+            <button type="button" onclick="toggleBtn()" id="btn-toggle"><span></span></button>
       </nav>
+
     </section>
 	<!-- en esta seccion vamos a hacer una brebe introducion -->
     <section class="intro">
         <div class="arnold-intro">
             <img src="arnold-grande.svg" alt="">
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sunt magnam repellat illo explicabo suscipit, nesciunt repellendus ad porro, ut molestiae accusamus mollitia, facere autem eligendi laboriosam! Dolorum, quo nulla.</p>
+        <p>Conoce a Arnold es un canal de YouTube de animación que explora diversos temas de la cultura popular a través de curiosidades y preguntas relacionadas con la cultura general. En esta página de fans compartiremos algunos de sus episodios y más contenido relacionado.</p>
         
     </section>
+	<section class="img-horizontal">
+	</section>
+	<section class="divs-informacion">
+		<div class="div-inf">
+			<h2>Título del primer div</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit praesentium eos nobis quidem tempora doloribus, eum possimus aliquid, consectetur placeat sed esse voluptate enim sint. Eius consectetur neque nobis eos.</p>
+		  </div>
+		  <div class="div-inf">
+			<h2>Título del segundo div</h2>
+			<p>Este es el contenido del segundo div.</p>
+		  </div>
+		  <div class="div-inf">
+			<h2>Título del tercer div</h2>
+			<p>Este es el contenido del tercer div.</p>
+		  </div>
+	</section>
 	<main>
 		<section class="contenido">
 			<h4>Lista de videos</h4>
 			<ul>
-				<li>
+				<!-- <li>
 					<h3>arnold</h3>
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/K6LfwA5gxWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</li>
@@ -65,7 +82,7 @@
                 <li>
 					<h3>arnold</h3>
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/K6LfwA5gxWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</li>
+				</li> -->
             
 			</ul>
 		</section>
@@ -74,5 +91,6 @@
 	<footer>
 		<p>&copy; 2023 Conoce a Arnold Fanpage. Todos los derechos no reservados.</p>
 	</footer>
+	<script src="javascript.js"></script>
 </body>
 </html>

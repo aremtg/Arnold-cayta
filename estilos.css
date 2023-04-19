@@ -4,7 +4,9 @@
 }
 body{
     margin: 0;
+    background-color: white;
 }
+/* la parte del nav, logo */
 .hero{
     width: 100%;
     min-height: 45vh;
@@ -17,10 +19,12 @@ nav{
     padding: 20px 8%;
     background-color: rgb(255, 255, 255);
 }
+/* hamburguesa escondida para el responsive */
 nav .bar-img{
     width: 35px;
     margin-right: 30px;
     cursor: pointer;
+    display: none;
 }
 nav .logo{
     width: 200px;
@@ -40,6 +44,7 @@ nav ul li a{
     text-decoration: none;
     color: #000000;
 }
+/* boton del modo noche */
 nav button{
     background-color: #efefef;
     height: 30px;
@@ -48,19 +53,34 @@ nav button{
     border:  none;
     outline: none;
     cursor: pointer;
+    transition: background .5s;
 }
+/* bolita del boton de modo */
 nav button span{
     display: block;
     background-color: gray;
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    margin-left: 2px;
+    margin-left: -2px;
 }
+/* clase que se agrega al dar click y se active la funcion toggle */
+.active{
+    background-color: rgb(62, 224, 62);
+}
+.active span{
+    background-color: white;
+    margin-left: 24px;
+    transition: .2s;
+}
+/* seccion dode va una mini intro e imagen  */
 .intro{
     margin-top: 0;
     display: flex;
     align-items: center;
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
 }
 .intro p{
     margin-left: 20px;
@@ -69,6 +89,79 @@ nav button span{
 .intro .arnold-intro img{
     width: 100px;
 }
+/* seccion de solo una imagen horizontal que ocupa el 100% del width */
+.img-horizontal{
+    background-image: url("img-horizontal.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 245px;
+    max-height: 245px;
+}
+/* seccion que tiene 3 divs donde en el futuro agregare ingregare inf de arnold */
+.divs-informacion{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.divs-informacion .div-inf{
+    width: 350px;
+    max-width: 350px;
+    border-radius: 15px;
+    background-color: #ededef;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+.div-inf:hover{
+    box-shadow: 0 8px 16px 0 gray;
+}
+/* para el responsive tuvimos que poner todo en posicion absoluta, para que organizar espacio */
+@media (max-width: 740px) {
+    .hero{
+        position:fixed;
+        /* sueño--- */
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .bar-img{
+        display: block;
+        position: absolute;
+        right: -3px;
+    }
+    nav .logo{
+        position: absolute;
+        left: -10px;
+    }
+    nav h2{
+        position: absolute;
+        left: 2px;
+        bottom: 2px;
+    }
+    nav #btn-toggle{
+        position: absolute;
+        right: 80px;
+        top: 23px;
+    }
+    nav ul{
+        display: none;
+    }
+    /* toco crear unos nuevos estilos para que se vea los navegadores asi */
+    .ulResponsive{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        font-size: 20px;
+        gap: 6px;
+    }
+
+  }
+/* seccion de contenido- por el momento no deberia ir ahi */
 main{ 
     background-color: #ffffff;
 }
