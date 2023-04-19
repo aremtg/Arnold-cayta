@@ -16,9 +16,6 @@ var hamburguesa = document.querySelector(".bar-img");
 var navUl = document.querySelector("nav ul");
 
 function menuMostrar(){
-    navUl.classList.toggle("ulResponsive")
-    if(navUl.classList.contains("ulResponsive")){
-        
-    }
+    navUl.classList.toggle("ulResponsive");
 
 }

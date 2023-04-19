@@ -10,7 +10,8 @@
 <body>
     <section class="hero">
       <nav>
-            <img src="bar.svg" alt="" onclick="menuMostrar()" class="bar-img">
+		<!-- menuMostrar es la funcion que se realiza al dar click a bar-img -->
+            <img src="imagenes/bar.svg" alt="" onclick="menuMostrar()" class="bar-img">
             <img src="logo.svg" alt="" class="logo">
             <h2>Conoce a Arnold</h2>
             <ul>
@@ -19,6 +20,7 @@
                 <li><a href="">Contactos</a></li>
                 <li><a href="login.html">Salir</a></li>
             </ul>
+			<!-- toggleBtn es la funcion que se realiza al dar click a btn-toggle -->
             <button type="button" onclick="toggleBtn()" id="btn-toggle"><span></span></button>
       </nav>
 
@@ -26,17 +28,30 @@
 	<!-- en esta seccion vamos a hacer una brebe introducion -->
     <section class="intro">
         <div class="arnold-intro">
-            <img src="arnold-grande.svg" alt="">
+            <img src="imagenes/arnold-grande.svg" alt="">
         </div>
-        <p>Conoce a Arnold es un canal de YouTube de animación que explora diversos temas de la cultura popular a través de curiosidades y preguntas relacionadas con la cultura general. En esta página de fans compartiremos algunos de sus episodios y más contenido relacionado.</p>
-        
+        <p>Conoce a Arnold es un canal de YouTube su personaje muñeco al que se le hacen experimentos y pruebas para demostrar diferentes conceptos científicos. En esta página de fans compartiremos algunos de sus episodios y más contenido relacionado.</p>
     </section>
 	<section class="img-horizontal">
 	</section>
+
+	<section class="premisa">
+			<h2>Premisa</h2>
+			<p>Arnold es un personaje animano que se mueve de una cituacion desafortunada, 
+				casi catastrofica a otra en cada video. Arnold no habla en sus videos, por 
+				lo que siempre esta el "Narrador" quien como cosa predecible es quien va narrando 
+				todo el video, mientras se comunica con Arnold, su relacion es un tanto amistosa, 
+				con un humor negro y toque sadico, pues tambien se supone que el narrador es quien
+				busca a Arnold para ponerlo en ciertas cituaciones para experimentar y demostrar posibles sucesos. 
+			</p>
+	</section>
 	<section class="divs-informacion">
+		
 		<div class="div-inf">
-			<h2>Título del primer div</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit praesentium eos nobis quidem tempora doloribus, eum possimus aliquid, consectetur placeat sed esse voluptate enim sint. Eius consectetur neque nobis eos.</p>
+			<h2>¿Que es arnold?</h2>
+			<p>Parece ser un personaje que es molestado por el narrador, no es alguien conocido en su ciudad, 
+				no parece irle muy bien el amor, es un tanto tonto y suele ser torpe, vive solo en su, tiene una piraña en su casa.
+			</p>
 		  </div>
 		  <div class="div-inf">
 			<h2>Título del segundo div</h2>
@@ -46,12 +61,16 @@
 			<h2>Título del tercer div</h2>
 			<p>Este es el contenido del tercer div.</p>
 		  </div>
-	</section>
-	<main>
+		  <div class="div-inf pez">
+			<img src="imagenes/pez.svg" alt="">
+		  </div>
+	</section>	  
+		<main>
+
 		<section class="contenido">
 			<h4>Lista de videos</h4>
-			<ul>
-				<!-- <li>
+			<!-- <ul>
+				<li>
 					<h3>arnold</h3>
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/K6LfwA5gxWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</li>
@@ -82,9 +101,8 @@
                 <li>
 					<h3>arnold</h3>
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/K6LfwA5gxWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</li> -->
-            
-			</ul>
+				</li>
+			</ul> -->
 		</section>
 	</main>
 	
