@@ -1,3 +1,4 @@
+/* se importo un estilo de fuente para la letra de la FanPage */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700;800&family=Poppins:wght@500&display=swap');
 *{
     font-family: 'Noto Sans', sans-serif;
@@ -115,6 +116,18 @@ nav button span{
 }
 .div-inf:hover{
     box-shadow: 0 8px 16px 0 gray;
+}
+footer{
+    height: 70px;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer a{
+    margin: 20px;
+    text-decoration: none;
 }
 /* para el responsive tuvimos que poner todo en posicion absoluta, para que organizar espacio */
 @media (max-width: 740px) {
