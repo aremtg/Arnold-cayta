@@ -6,8 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 	<link rel="stylesheet" href="videos.css">
+	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+	<section class="hero">
+		<nav>
+		  <!-- menuMostrar es la funcion que se realiza al dar click a bar-img -->
+			  <img src="imagenes/bar.svg" alt="" onclick="menuMostrar()" class="bar-img">
+			  <img src="logo.svg" alt="" class="logo">
+			  <h2>Conoce a Arnold</h2>
+			  <ul>
+				  <li><a href="">Casa</a></li>
+				  <li><a  href="/videos.html">Video</a></li>
+				  <li><a href="arnold-ayuda.html">Arnold te ayuda</a></li>
+				  <li><a href="login.html">Salir</a></li>
+			  </ul>
+			  <!-- toggleBtn es la funcion que se realiza al dar click a btn-toggle -->
+			  <button type="button" onclick="toggleBtn()" id="btn-toggle"><span></span></button>
+			  
+		</nav>
+	  </section>
     <main>
 		<!-- en esta seccion vamos a ordenar una lista de los videos mas populares del canal -->
 		<section class="contenido">
