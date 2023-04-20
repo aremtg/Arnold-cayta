@@ -3,10 +3,12 @@
 *{
     font-family: 'Noto Sans', sans-serif;
 }
+/* se queta la margen del cuerpo de la pagina */
 body{
     margin: 0;
     padding: 0;
 }
+/* se le aplico medidas, efectos en los bordes a los contenedores de los videos, tamaño y estilo de la fuente y efecto de traslacion al boton*/
 .contenido{
     width: 90%;
     margin: auto;

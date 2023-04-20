@@ -1,18 +1,44 @@
+/* se importo un estilo de fuente para la letra de la FanPage */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700;800&family=Poppins:wght@500&display=swap');
 *{
     font-family: 'Noto Sans', sans-serif;
 }
-
+/* se queta la margen del cuerpo de la pagina */
 body{
     margin: 0;
 }
+/* se aplico una forma al login con sus medidas y color, texto centrado y efectos al boton */
 form{
-    width: 300px;
-    margin: 30px auto ;
+    width: 400px;
+    margin: 150px auto ;
     background-color: #FFC34F;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
+    box-shadow: 0 8px 16px 0 gray;
+
+}
+form h3{
+    text-align: center;
+    margin: 10px;
+}
+.logo{
+    margin-top: 25px;
+}
+.botones{
+    margin-bottom: 25px;
+    
+}
+.botones button{
+    width: 90px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.botones button:hover{
+    background-color: darkgrey;
 
 }
