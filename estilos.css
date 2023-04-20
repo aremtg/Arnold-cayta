@@ -11,14 +11,13 @@ body{
 .hero{
     width: 100%;
     min-height: 45vh;
-    position: relative;
-    display: grid;
+    user-select: none;
 }
 nav{
     display: flex;
     align-items: center;
     padding: 20px 8%;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
 }
 /* hamburguesa escondida para el responsive */
 nav .bar-img{
@@ -47,10 +46,12 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: #B8300C;
+    border-bottom: #B8300C solid;
+    transition: all .1s;
 }
 /* boton del mode */
 nav button{
-    background-color: #efefef;
+    background-color: #85ebb0;
     height: 30px;
     width: 60px;
     border-radius: 20px;
@@ -62,7 +63,7 @@ nav button{
 /* bolita del boton de modo */
 nav button span{
     display: block;
-    background-color: gray;
+    background-color: rgb(255, 145, 0);
     height: 25px;
     width: 25px;
     border-radius: 50%;
@@ -70,54 +71,74 @@ nav button span{
 }
 /* clase que se agrega al dar click y se active la funcion toggle */
 .active{
-    background-color: rgb(62, 224, 62);
+    background-color: rgb(172, 168, 168);
 }
 .active span{
-    background-color: white;
+    background-color: rgb(19, 19, 18);
     margin-left: 24px;
     transition: .2s;
 }
 /* seccion dode va una mini intro e imagen  */
 .intro{
-    margin-top: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #ffffff;
     width: 90%;
     margin: auto;
+    padding: 5px 0;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0 8px 16px 0 gray;
+    user-select: none;
+}
+.intro .arnold-de-pie img{
+    width: 100px;
 }
 .intro p{
     margin-left: 20px;
-    width: 45%;
+    max-width: 400px;
 }
-.intro .arnold-intro img{
-    width: 100px;
+.intro .placa-de-youtube img{
+    width: 300px;
 }
+
 /* seccion de solo una imagen horizontal que ocupa el 100% del width */
 .img-horizontal{
     background-image: url("imagenes/img-horizontal.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 350px;
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 8px 16px 0 gray;
+}
+/* premisa */
+.premisa{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 /* seccion que tiene 3 divs donde en el futuro agregare ingregare inf de arnold */
 .divs-informacion{
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     justify-content: center;
 }
 .divs-informacion .div-inf{
-    max-width: 350px;
     border-radius: 15px;
     background-color: #ededef;
     margin-top: 10px;
     padding: 5px 10px;
 }
+
 .div-inf:hover{
     box-shadow: 0 8px 16px 0 gray;
 }
@@ -127,13 +148,8 @@ nav button span{
 /* para el responsive tuvimos que poner todo en posicion absoluta, para que organizar espacio */
 @media (max-width: 740px) {
     .hero{
-        min-height: 25vh;
-        position:fixed;
-        top: 0;
+        min-height: 29vh;
         /* sueño--- */
-    }
-    .intro{
-        margin-top: 25vh;
     }
     nav{
         display: flex;
@@ -141,25 +157,26 @@ nav button span{
     }
     nav .bar-img{
         display: block;
-        position: absolute;
-        right: -3px;
+        position: fixed;
+        right: -20px;
+        top: 2px;
     }
     nav .logo{
         position: absolute;
         top: -20px;
-        left: 30px;
-        width: 100px;
+        left: 100px;
+        width: 90px;
     }
     nav h2{
         position: absolute;
         top: 120px;
-        left: 2px;
+        left: 50px;
         bottom: -2px;
     }
     nav #btn-toggle{
         position: absolute;
-        right: 80px;
-        top: 23px;
+        right: 60px;
+        top: 15px;
         width: 30px;
         height: 15px;
     }
@@ -177,16 +194,21 @@ nav button span{
     nav ul{
         display: none;
     }
+    /* nav ul li a{
+        border-bottom: #000000 solid;
+    } */
     /* toco crear unos nuevos estilos para que se vea los navegadores asi */
     .ulResponsive{
         display: block;
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         right: 10px;
         top: 50px;
         font-size: 13px;
         gap: 6px;
+        background-color: #ededef;
+        border-radius: 20px 0px 0px 20px;
     }
   }
 /* seccion de contenido por el momento no deberia ir ahi */
