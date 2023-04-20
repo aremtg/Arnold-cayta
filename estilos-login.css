@@ -7,12 +7,28 @@ body{
     margin: 0;
 }
 form{
-    width: 40%;
+    width: 300px;
     margin: 30px auto ;
     background-color: #FFC34F;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
+<<<<<<< HEAD
 
 }
+=======
+    padding: 20px;
+}
+form h2{
+    text-align: center;
+}
+.btn-si, .btn-no{
+    width: 100px;
+    height: 50px;
+    font-size: 23px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+>>>>>>> 25d7bc0584e6b67e390fff258a2b7434537f7410

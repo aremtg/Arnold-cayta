@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnold te ayuda</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="arnold-ayuda.css">
+</head>
+<body>
+    <section class="hero">
+        <nav>
+          <!-- menuMostrar es la funcion que se realiza al dar click a bar-img -->
+              <img src="imagenes/bar.svg" alt="" onclick="menuMostrar()" class="bar-img">
+              <img src="logo.svg" alt="" class="logo">
+              <h2>Conoce a Arnold</h2>
+              <ul>
+                  <li><a href="index.html">Casa</a></li>
+                  <li><a  href="">Videos</a></li>
+                  <li><a href="#">Arnold te ayuda</a></li>
+                  <li><a href="login.html">Salir</a></li>
+              </ul>
+              <!-- toggleBtn es la funcion que se realiza al dar click a btn-toggle -->
+              <button type="button" onclick="toggleBtn()" id="btn-toggle"><span></span></button>
+              
+        </nav>
+      </section>
+  <section class="contenido-arnold-te-ayuda">
+    <section id="calculadora">
+        <h4>Arnold Calculadora</h4>
+            <div id="pantalla">
+                
+            </div>
+            <div class="botones">
+                    
+                <button class="boton col-2 borrar">C</button>
+                <button class="boton numero">&larr;</button>
+                <button class="boton numero">%</button>
+                <button class="boton numero">7</button>
+                <button class="boton numero">8</button>
+                <button class="boton numero">9</button>
+
+                <button class="boton operador">*</button>
+                <button class="boton numero">4</button>
+                <button class="boton numero">5</button>
+                <button class="boton numero">6</button>
+                    
+                <button class="boton operador">-</button>
+                <button class="boton numero">1</button>
+                <button class="boton numero">2</button>
+                <button class="boton numero">3</button>
+
+                <button class="boton operador">+</button>
+                <button class="col-2 boton numero">0</button>
+                <button class="boton numero">.</button>
+                <button class="boton operador igual">=</button>
+            </div>  
+    </section>
+    <section class="frase-motivacional">
+    <h1>Frase motivacional Arnold</h1>
+        <button onclick="mostrarFrase()">CLICK</button>
+    <p id="frase">
+
+    </p>
+    </section>
+    <section class="calcular-edad">
+        <h4>¿?</h4>
+        <div class="contenedor-inputs">
+            <input type="number" class="valorIngresado">
+            <input type="text" class="cajaResultado">
+            <input type="submit" onclick="calcularEdad()">
+        </div>
+    </section>
+  </section>
+        
+    <!-- hola tatiana guzman--> 
+    <script src="js-index.js"></script>
+    <script src="js-arnold-ayuda.js"></script>
+
+</body>
+</html>
