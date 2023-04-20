@@ -63,3 +63,10 @@ const frases = [
     const p = document.getElementById("frase");
     p.textContent = fraseAleatoria;
   }
+
+  
+  function calcularEdad(){
+     var valorIngresado = document.querySelector(".valorIngresado").value;
+     var cajaResultado = document.querySelector(".cajaResultado");
+     cajaResultado.value = "noc";
+  }

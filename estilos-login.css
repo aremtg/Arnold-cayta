@@ -14,7 +14,6 @@ form{
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
-<<<<<<< HEAD
     padding: 20px;
 }
 form h2{
@@ -27,9 +26,4 @@ form h2{
     outline: none;
     border: none;
     cursor: pointer;
-=======
-}
-form h2{
-    text-align: center;
->>>>>>> 4e56495cb4b3039f77247973eee5a26e07b74e2a
 }

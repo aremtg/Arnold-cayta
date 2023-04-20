@@ -10,7 +10,7 @@ body{
 /* contiene el logo, el nav, el mode */
 .hero{
     width: 100%;
-    min-height: 45vh;
+    min-height: 38vh;
     user-select: none;
 }
 nav{

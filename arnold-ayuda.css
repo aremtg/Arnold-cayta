@@ -1,13 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Noto+Sans:wght@500;600;700;800&family=Poppins:wght@500&display=swap');
 body{
     margin: 0;
     padding: 0;
+}
+.contenido-arnold-te-ayuda{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    box-shadow: 0 8px 16px 0 gray;
+    padding: 10px 5px;
+    border-radius: 20px;
 }
 #calculadora{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 230px;
-    height: 360px;
+    height: 370px;
     border-radius: 20px;
     padding: 5px;
     background-image: url(/imagenes/fondo-calculadora.svg);
@@ -16,13 +29,14 @@ body{
     background-size: cover;
     box-shadow: 0 8px 16px 0 gray;
 }
-h4{
+#calculadora h4{
+    font-family: 'Chewy', cursive;
     margin-bottom: 3px;
     margin-top: 3px;
-    font-size: 20px;
+    font-size: 27px;
 }
 #pantalla{
-    border: 5px solid rgb(196, 132, 72);
+    border: 5px solid rgb(248, 187, 179);
     border-radius: 20px;
     display: flex;
     justify-content: end;
@@ -31,7 +45,7 @@ h4{
     font-size: 25px;
     width: 90%;
     height: 50px;
-    background-color: #9dcfcd;
+    background-color: #f1f5f5;
     overflow: hidden;
 }
 .botones{
@@ -39,7 +53,7 @@ h4{
     grid-template-columns: repeat(4, 55px);
     grid-template-rows: repeat(5, 55px);
 }
-button{
+.botones button{
   cursor: pointer;
   margin: 5px;
   padding: 0;
@@ -47,7 +61,7 @@ button{
   font-size: 1.5em;
   border: none;  
   color: rgb(0, 0, 0);
-  background-color: rgba(240, 248, 255, 0.87);
+  background-color: rgba(231, 236, 240, 0.87);
   box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #f8f8f841;
 
 }
@@ -55,30 +69,56 @@ button{
     grid-column: span 2;
 }
 .borrar{
-    background-color:rgba(226, 109, 109, 0.959);
+    background-color:rgba(204, 13, 13, 0.959);
 }
 /* frases */
-.contenido-arnold-te-ayuda{
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    box-shadow: 0 8px 16px 0 gray;
-    padding: 10px 5px;
-    border-radius: 20px;
-}
 .frase-motivacional{
-    background-color: rgb(190, 172, 172);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 16px 0 rgb(241, 226, 193);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: max-content;
+    width: 330px;
+    height: 260px;
     padding: 5px 10px;
     border-radius: 20px;
 }
+.frase-motivacional h1{
+    color: brown;
+}
+.frase-motivacional button{
+    font-size: 23px;
+    background-color: beige;
+    border: none;
+    border-bottom: 2px solid #eb711f;
+    cursor: pointer;
+}
 .frase-motivacional p{
     text-align: center;
+    font-size: 25px;
+    font-family: 'Chewy', cursive;
+}
+/* calcula-edad */
+.calcular-edad{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 16px 0 rgb(241, 226, 193);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 260px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.calcular-edad .contenedor-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-inputs input{
+    width: 90px;
+    height: 50px;
 }
