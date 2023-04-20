@@ -1,0 +1,31 @@
+/* se importo un estilo de fuente para la letra de la FanPage */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700;800&family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+main{ 
+    background-color: #ffffff;
+}
+.contenido h4{
+
+    font-size: 50px;
+    text-align: center;
+
+}
+.contenido h2{
+    color: #000000;
+}
+.contenido ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contenido ul li{
+    list-style: none;
+}
+ul li iframe{
+    border-radius: 20px;
+}
+ul li iframe:hover{
+    box-shadow: 0 8px 16px 0 rgb(150, 149, 149);
+}
