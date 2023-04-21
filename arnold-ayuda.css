@@ -33,12 +33,14 @@ body{
     background-size: cover;
     box-shadow: 0 8px 16px 0 gray;
 }
+/* se aplica el texto con su tipo de fuente, margen superior e inferior y tamaño de fuente */
 #calculadora h4{
     font-family: 'Chewy', cursive;
     margin-bottom: 3px;
     margin-top: 3px;
     font-size: 27px;
 }
+/* se aplican las medidas, el estilo de los bordes, la posicion del texo y el color de la pantalla de la calculadora */
 #pantalla{
     border: 5px solid rgb(248, 187, 179);
     border-radius: 20px;
@@ -52,6 +54,7 @@ body{
     background-color: #f1f5f5;
     overflow: hidden;
 }
+/* se aplican los colores, estilos de bordes, organizacion y tamaño de texo a los botones de la calculadora */
 .botones{
     display: grid;
     grid-template-columns: repeat(4, 55px);
@@ -75,7 +78,7 @@ body{
 .borrar{
     background-color:rgba(204, 13, 13, 0.959);
 }
-/* frases */
+/* se aplica las medidas, el color y estilo de los bordes, la posicion del texto y el boton para las frases motivadoras */
 .frase-motivacional{
     background-color: rgb(255, 255, 255);
     box-shadow: 0 8px 16px 0 rgb(241, 226, 193);
