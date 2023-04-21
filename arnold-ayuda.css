@@ -12,11 +12,12 @@ body{
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat( auto);
     box-shadow: 0 8px 16px 0 gray;
     padding: 10px 5px;
     border-radius: 20px;
+    background-color: white;
 }
 /* se le aplico medidas, posicion, posicion del texto y fondo a la calculadora */
 #calculadora{
@@ -81,7 +82,7 @@ body{
 /* se aplica las medidas, el color y estilo de los bordes, la posicion del texto y el boton para las frases motivadoras */
 .frase-motivacional{
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 8px 16px 0 rgb(241, 226, 193);
+    box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -4,13 +4,10 @@ function toggleBtn(){
     btn.classList.toggle("active");
     
     if(btn.classList.contains("active")){
-    document.body.style.backgroundImage = `url("imagenes/estrellas.jpg")`;
-    document.body.style.backgroundPosition = "center";
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundColor ="black";
 
     }else{
-        document.body.style.backgroundImage = "none";
+        document.body.style.backgroundColor = "white";
 
     }
 }
@@ -22,7 +19,5 @@ function menuMostrar(){
     navUl.classList.toggle("ulResponsive");
 
 }
-
-var contenedorContenido = document.getElementById("contenido");
 
 
