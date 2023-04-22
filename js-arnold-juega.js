@@ -1,45 +1,3 @@
-const pantalla = document.getElementById('pantalla');
-const botones = document.getElementsByClassName('boton');
-const botonBorrar = document.getElementById('borrarUltimo');
-
-const arrayBotones = Array.from(botones);
-arrayBotones.forEach(button => {
-     button.addEventListener("click", () =>{
-          calculadora(button, pantalla)
-     })
-})
-function calculadora(button, pantalla){
-     switch (button.innerHTML) {
-          case "C":
-               borrar(pantalla);
-               break;
-          case "=":
-               calcular(pantalla);
-               break;
-          case "←":
-               borraUltimo(pantalla);
-               break;
-          default:
-               actualizar(pantalla, button);
-               break;
-     }
-}
-function calcular(pantalla){
-    pantalla.innerHTML = eval(pantalla.innerHTML);
-}
-function actualizar(pantalla, button){
-     if (pantalla.innerHTML == 0) {
-          pantalla.innerHTML = ` `;
-     }     
-     pantalla.innerHTML = pantalla.innerHTML + button.innerHTML;
-}
-function borrar(pantalla){
-     pantalla.innerHTML = ` `;
-}
-function borraUltimo(pantalla) {
-     const valorActual = pantalla.innerHTML;
-     pantalla.innerHTML = valorActual.slice(0, -1);
-}
 // consejos- frase
 
 const frases = [
@@ -55,7 +13,7 @@ const frases = [
     "A veces las cosas más pequeñas ocupan más espacio en tu corazón"
   ];
   function obtenerFraseAleatoria() {
-     // devuuelve la frase numero ...redendea el numero randon-entre 10
+     // devuuelve la frase numero ...redondea el numero randon-entre 10
     return frases[Math.floor(Math.random() * frases.length)];
   }
 // actualiza su contenido usando la propiedad textContent.
