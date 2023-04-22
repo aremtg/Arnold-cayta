@@ -35,7 +35,7 @@ const frases = [
               document.getElementById("boton").disabled = true;
               document.getElementById("sonido").innerHTML = `<audio src="/imagenes/tiempo-sonido.mp3" autoplay></audio>`
               document.getElementById("alerta-tiempo").innerHTML = `<h1>`+clics+`</h1><span id="span-yaa">Se que puedes con mas.</span><img onclick= "reiniciar()"src="/imagenes/reiniciar.svg" alt="">`;
-          }, 5000);
+          }, 1000);
           
       }
 
