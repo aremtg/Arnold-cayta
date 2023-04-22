@@ -1,0 +1,131 @@
+/* se importo un estilo de fuente para la letra de la FanPage */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Noto+Sans:wght@500;600;700;800&family=Poppins:wght@500&display=swap');
+/* se queta la margen del cuerpo de la pagina */
+body{
+    margin: 0;
+    padding: 0;
+}
+/* se aplico una forma al contenedor principal con sus medidas, colores y el texto centrado */
+.contenido-arnold-juega{
+    width: 90%;
+    margin: auto;
+    padding: 10px 5px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat( auto);
+    box-shadow: 0 8px 16px 0 gray;
+    border-radius: 20px;
+    background-color: white;
+}
+/* caja-alo... es la que conteiene el titulo y otro contenedor con class alocarnold */
+.caja-alocarnold{
+    width: 80%;
+    height: 250px;
+    flex-direction: column;
+    box-shadow: 0 8px 16px 0 gray;
+    border-radius: 20px;
+}
+.caja-alocarnold p{
+    width: 100%;
+    text-align: center;
+    background-color: #89dbd4;
+    margin-top: 0;
+    border-radius: 20px 20px 0 0;
+    padding: 15px 0;
+}
+.alocarnold{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    align-items: center;
+}
+.alocarnold .caja-boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.alocarnold .caja-boton button{
+    width: 100px;
+    height: 100px;
+    border: none;
+    padding: 12px;
+    border-radius: 100%;
+    background-color: rgb(135, 222, 161);
+
+}
+.alocarnold .caja-resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.caja-resultado span{
+    font-size: 50px;
+}
+/* alertaaaa-cuando se acaba el tiempo */
+#alerta-tiempo {
+    position:absolute;
+    left:180px;
+    bottom: 140px;
+    display: flex ;
+    align-items: center;
+    flex-direction: column;
+}
+#alerta-tiempo h1{
+    background-color: rgb(42, 102, 190);
+    padding: 5px 30px;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 50px;
+    bottom: 25px;
+}
+#alerta-tiempo img{
+    position: absolute;
+    width: 60px;
+    bottom: -28px;
+    cursor: pointer;
+}
+#span-yaa {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(68, 238, 105);
+    border: 2px solid rgba(103, 216, 59, 0.993);
+    padding: 20px 20px 30px ;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* se aplica las medidas, el color y estilo de los bordes, la posicion del texto y el boton para las frases motivadoras */
+.frase-motivacional{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 260px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.frase-motivacional h1{
+    color: brown;
+}
+.frase-motivacional button{
+    font-size: 23px;
+    background-color: beige;
+    border: none;
+    border-bottom: 2px solid #eb711f;
+    cursor: pointer;
+}
+.frase-motivacional p{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Chewy', cursive;
+}

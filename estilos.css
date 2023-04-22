@@ -14,7 +14,7 @@ body{
     min-height: 20vh;
     margin-bottom: 35px;
     user-select: none;
-    box-shadow: 0 8px 16px 0 gray;
+    box-shadow: 0 1px 16px 0 gray;
 }
 nav{
     display: flex;
@@ -151,16 +151,20 @@ nav button span{
 }
 /* se hace el footer para los derechos de autor*/
 footer{
-    height: 70px;
-    background-color: darkgray;
+    height: 90px;
+    background-color: rgb(194, 93, 47);
     display: flex;
     justify-content: center;
-    
+    border-radius: 20px 20px 0 0;
 }
-
+footer p{
+    color: white;
+    font-size: 14px;
+}
 footer a{
     margin: 20px;
     text-decoration: none;
+
 }
 /* para el responsive tuvimos que poner todo en posicion absoluta, para que organizar espacio */
 @media (max-width: 740px) {
@@ -211,9 +215,9 @@ footer a{
     nav ul{
         display: none;
     }
-    /* nav ul li a{
-        border-bottom: #000000 solid;
-    } */
+    nav ul li a{
+        border-bottom: 1px #000000 solid;
+    }
     /* toco crear unos nuevos estilos para que se vea los navegadores asi */
     .ulResponsive{
         display: block;
@@ -228,24 +232,3 @@ footer a{
         border-radius: 20px 0px 0px 20px;
     }
   }
-/* seccion de contenido por el momento no deberia ir ahi */
-main{ 
-    background-color: #ffffff;
-}
-.contenido h2{
-    color: #000000;
-}
-.contenido ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.contenido ul li{
-    list-style: none;
-}
-ul li iframe{
-    border-radius: 20px;
-}
-ul li iframe:hover{
-    box-shadow: 0 8px 16px 0 rgb(150, 149, 149);
-}

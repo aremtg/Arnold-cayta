@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnold te ayuda</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="arnold-juega.css">
+</head>
+<body>
+    <section class="hero">
+        <nav>
+          <!-- menuMostrar es la funcion que se realiza al dar click a bar-img -->
+              <img src="imagenes/bar.svg" alt="" onclick="menuMostrar()" class="bar-img">
+              <img src="logo.svg" alt="" class="logo">
+              <h2>Conoce a Arnold</h2>
+              <ul>
+                  <li><a href="index.html">Casa</a></li>
+                  <li><a href="videos.html">Videos</a></li>
+                  <li><a href="#">Arnold Juega</a></li>
+                  <li><a href="login.html">Salir</a></li>
+              </ul>
+              <!-- toggleBtn es la funcion que se realiza al dar click a btn-toggle -->
+              <button type="button" onclick="toggleBtn()" id="btn-toggle"><span></span></button>
+              
+        </nav>
+      </section>
+   <!-- en esta seccion se hizo la estructura de la calculdora -->
+  <section class="contenido-arnold-juega">
+
+    <section class="caja-alocarnold">
+        <p>¿Cuantos clicks haces en 5 segundos?</p>
+        <div class="alocarnold">
+            <div class="caja-boton">
+            
+                <span id="sonido"></span>
+                <h1>ALOCARNOLD</h1>
+                <button id="boton" onclick="contar()">!CLICK!</button>
+            </div>
+            <div class="caja-resultado">
+                <h3>Clicks</h3>
+                <span id="numeroClicks">0</span>
+                <div id="alerta-tiempo">
+            
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="frase-motivacional">
+    <h1>Frase motivacional Arnold</h1>
+        <button onclick="mostrarFrase()">CLICK</button>
+    <p id="frase">
+
+    </p>
+    </section>
+        
+    <!-- hola tatiana guzman--> 
+    <script src="js-index.js"></script>
+    <script src="js-arnold-juega.js"></script>
+
+</body>
+</html>

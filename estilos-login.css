@@ -9,8 +9,8 @@ body{
 }
 /* se aplico una forma al login con sus medidas y color, texto centrado y efectos al boton */
 form{
-    width: 400px;
-    margin: 150px auto ;
+    width: 410px;
+    margin: 60px auto ;
     background-color: #FFC34F;
     display: flex;
     flex-direction: column;
